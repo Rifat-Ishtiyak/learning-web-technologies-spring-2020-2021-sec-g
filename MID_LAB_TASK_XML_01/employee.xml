@@ -2,7 +2,13 @@
     <emp>
         <id>1</id>
         <name>John Doe</name>
-        <address>H# 38, R#3, Banani, Dhaka</address>
+        <address>
+            <flat></flat>
+            <house>38>/house>
+            <road>3</road>
+            <area>Banani</area>
+            <dist>Dhaka</dist>
+        </address>
         <dept>Sales</dept>
         <salary>$20000</salary>
     </emp>
@@ -10,7 +16,13 @@
     <emp>
         <id>2</id>
         <name>Mark Zuckerberg</name>
-        <address>Flat# A/1, H# 20, R#18, Mirpur, Dhaka</address>
+        <address>
+            <flat>A/1</flat>
+            <house>20</house>
+            <road>18</road>
+            <area>Mirpur</area>
+            <dist>Dhaka</dist>
+        </address>
         <dept>Accounts</dept>
         <salary>$12000</salary>
     </emp>
@@ -18,7 +30,13 @@
     <emp>
         <id>3</id>
         <name>John Doe</name>
-        <address>H# 38, R#3, Motijheel</address>
+        <address>
+            <flat></flat>
+            <house>38</house>
+            <road>3/road>
+            <area>Motijheel</area>
+            <dist></dist>
+        </address>
         <dept>Human Resouce</dept>
         <salary>$30000</salary>
     </emp>
