@@ -27,13 +27,13 @@
     ];
 
     $n=readline("Enter a name to search: ");
-    
     for($i=0;$i<4;$i++){
         if($n==$students[$i]['name']){
             echo('Student ID : '.$students[$i]['id']."\n");
             echo('Student Name : '.$students[$i]['name']."\n");
             echo('Dept. Name : '.$students[$i]['dept']."\n");
             echo('Student Email : '.$students[$i]['email']."\n");
+            $count++;
         }
     }
 ?>
