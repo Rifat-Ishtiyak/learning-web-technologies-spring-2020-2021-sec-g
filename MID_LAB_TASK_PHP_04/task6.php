@@ -33,7 +33,6 @@
             echo('Student Name : '.$students[$i]['name']."\n");
             echo('Dept. Name : '.$students[$i]['dept']."\n");
             echo('Student Email : '.$students[$i]['email']."\n");
-            $count++;
         }
     }
 ?>
