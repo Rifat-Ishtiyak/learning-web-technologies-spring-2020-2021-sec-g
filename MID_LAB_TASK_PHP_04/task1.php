@@ -7,5 +7,5 @@
 
     echo('Area of Triangle: '.$area."\n");
     
-    echo('Perimeter of Triangle: '.$perimeter."\n")
+    echo('Perimeter of Triangle: '.$perimeter."\n");
 ?>
