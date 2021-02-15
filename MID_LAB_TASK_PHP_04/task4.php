@@ -10,7 +10,7 @@
         echo($second.' is the largest');
     }
     elseif($third>$first && $third>$second){
-        echo($third.' is the largest');
+        echo($third.' is the largest number');
     }
     
 ?>
