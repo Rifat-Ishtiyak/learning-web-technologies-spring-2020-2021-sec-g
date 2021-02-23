@@ -4,8 +4,8 @@
         $newpass=$_POST['newPass'];
         $cpass=$_POST['confirmPass'];
 
-        if ($oldpass!=$newpass) {
-            # code...
+        if ($oldpass!=$newpass && $newpass==$cpass) {
+            echo"successfully changed";
         }
         else{
             echo"new pass sholdnot be the same as the current pass";
