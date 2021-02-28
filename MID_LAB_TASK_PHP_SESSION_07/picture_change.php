@@ -3,14 +3,14 @@
     session_start();
 
     if(isset($_POST['submit'])){
-        if(!empty($_POST['img'])){
-            echo "changed successfully";
-            //$_SESSION['img']=$_POST['img'];
-        }
-        else{
-            echo "image upload failed";
-        }
+            if(move_uploaded_file($_FILES['img']['tmp_name'], 'file/'.$_FILES['img']['name'])){
+                echo"Uploaded succussfully";
+            }
+            else{
+                echo "failed";
+            }
     }
+    
 ?>
 
 
@@ -45,7 +45,7 @@
             <td colspan="2" rowspan="2">  
                 <fieldset>
                     <legend><b><h2>PROFILE PICTURE</h2></b></legend>
-                    <form action="" method="post">
+                    <form action="" method="post" enctype="multipart/form-data">
                         <img src="file/user.png" height="250px" width="250px" alt=""><br>
                         <input type="file" name="img"><br>
                         <hr>
