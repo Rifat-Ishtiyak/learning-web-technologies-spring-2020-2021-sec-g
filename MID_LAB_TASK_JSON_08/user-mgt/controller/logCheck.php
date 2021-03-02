@@ -15,10 +15,12 @@
 				if ($temp[$key1]["username"]==$_POST['username'] and $temp[$key1]["password"]==$_POST['password']) {
 					$f=1;
 				}
-			
+
 			}
 			if($f==1){
 				$_SESSION['flag'] = true;
+				$name=$_POST['username'];
+				$_SESSION['nam']=$name;
 				header('location: ../view/home.php');
 			}
 			else{
