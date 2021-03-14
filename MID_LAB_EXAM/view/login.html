@@ -9,12 +9,14 @@
 <body>
     <fieldset>
         <legend>Login</legend>
-        User Id: <br>
-        <input type="text" name="id" id=""> <br>
-        Passward: <br>
-        <input type="password" name="pass" id=""> <br>
-        <br>
-        <input type="submit" value="Login"> <a href="../view/reg.html">Register</a>
+        <form method="POST" action="../controller/log.php">
+            User Id: <br>
+            <input type="text" name="id" id=""> <br>
+            Passward: <br>
+            <input type="password" name="pass" id=""> <br>
+            <br>
+            <input type="submit" name="submit" value="Login"> <a href="../view/reg.html">Register</a>
+        </form>
     </fieldset>
 </body>
 </html>
