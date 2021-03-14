@@ -17,10 +17,12 @@
 </head>
 <body>
 <center>
-	<h1>Welcome <?php $name ?>!</h1>
+	<h1>Welcome <?php echo $name ?>!</h1>
 	<a href="profile.html">Profile</a>
 	<br/>
 	<a href="change_password.html">Change Password</a>
+	<br/>
+    <a href="change_password.html">View User</a>
 	<br/>
 	<a href="../controller/logout.php">Logout</a>
 </center>
