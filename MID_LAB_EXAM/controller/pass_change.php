@@ -11,7 +11,7 @@
             $temp = json_decode($inp, true);
 
             foreach ($temp as $key1 => $value1) {
-				if ($temp[$key1]["id"]==$_POST['cpass']) {
+				if ($temp[$key1]["cpass"]==$_POST['cpass']) {
 					$temp[$key1]["pass"]=$new_pass;
                    // array_push($temp, $temp[$key1]["pass"]);
                     $jsonData = json_encode($temp);
@@ -20,7 +20,6 @@
 				}
 			}
         }
-
     }
 
 ?>
