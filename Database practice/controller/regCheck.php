@@ -19,7 +19,7 @@
 				//$_SESSION['password'] = $password;
 				//$_SESSION['current_user'] = $user;
 
-				$conn = mysqli_connect('localhost','root', '', 'usermgt');
+				require('../model/db_connect.php');
 
 				$sql="insert into user values('','$username','$email', '$password')";
 				$result=mysqli_query($conn, $sql);

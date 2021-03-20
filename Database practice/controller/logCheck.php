@@ -13,7 +13,7 @@
 
 			//$user = $_SESSION['current_user'];
 			
-			$conn = mysqli_connect('localhost','root', '', 'usermgt');
+			require('../model/db_connect.php');
 
 			$sql="select password from user where name='$username'";
 			$result1=mysqli_query($conn, $sql);
