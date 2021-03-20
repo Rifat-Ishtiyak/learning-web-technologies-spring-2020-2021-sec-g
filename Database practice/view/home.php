@@ -4,6 +4,7 @@
 	
 ?>
 	
+	
 	<h1>Welcome home, <?php echo $_SESSION['uname']; ?></h1>
 	
 	<a href="create.php"> Create User</a> |
