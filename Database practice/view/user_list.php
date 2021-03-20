@@ -31,7 +31,7 @@ while($row=mysqli_fetch_assoc($users_obj)){
 				<td>{$row['name']}</td>
 				<td>{$row['email']}</td>
 				<td><a href='edit.php?id={$row['ID']}'>edit</a> |
-				    <a href=''>delete</a>
+				    <a href='../controller/delete.php?id={$row['ID']}'>delete</a>
 				</td>
 				
 		";
