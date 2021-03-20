@@ -19,10 +19,9 @@
 				//$_SESSION['password'] = $password;
 				//$_SESSION['current_user'] = $user;
 
-
 				$conn = mysqli_connect('localhost','root', '', 'usermgt');
 
-				$sql="insert into user values('$username','$email', '$password')";
+				$sql="insert into user values('','$username','$email', '$password')";
 				$result=mysqli_query($conn, $sql);
 
 				header('location: ../view/login.html');
