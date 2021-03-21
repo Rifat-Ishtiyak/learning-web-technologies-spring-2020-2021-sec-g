@@ -42,7 +42,7 @@ function getUserbyId($id){
 function getAllUser(){
 
 	$conn = getConnection();
-	$sql = "select * from users";
+	$sql = "select * from user";
 	$result = mysqli_query($conn, $sql);
 	$users = [];
 	while ($row = mysqli_fetch_assoc($result)) {
