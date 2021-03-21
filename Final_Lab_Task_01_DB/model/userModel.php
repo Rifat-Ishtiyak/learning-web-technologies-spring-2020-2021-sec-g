@@ -4,7 +4,7 @@ require_once('db.php');
 
 function validateUser($username, $password){
 	$conn = getConnection();
-	$sql = "select * from users where username='{$username}' and password='{$password}'";
+	$sql = "select * from user where name='{$username}' and password='{$password}'";
 	$result = mysqli_query($conn, $sql);
 	$row = mysqli_fetch_assoc($result);
 
@@ -17,7 +17,7 @@ function validateUser($username, $password){
 
 function insertUser($user){
 	$conn = getConnection();
-	$sql = "insert into user values('', '{$user['username']}', '{$user['password']}', '{$user['email']}')";
+	$sql = "insert into user values('', '{$user['username']}', '{$user['email']}', '{$user['password']}')";
 
 	$result = mysqli_query($conn, $sql);
 
