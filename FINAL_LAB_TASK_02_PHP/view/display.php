@@ -37,6 +37,3 @@
 ?>
 
 	
-<?php
-	include('footer.php');
-?>
