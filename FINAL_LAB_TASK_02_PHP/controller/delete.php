@@ -3,7 +3,7 @@
     session_start();
     
 
-        $id=$_GET['id'];
+        $id=$_SESSION['edit_id'];
 
     
         deleteProduct($id);

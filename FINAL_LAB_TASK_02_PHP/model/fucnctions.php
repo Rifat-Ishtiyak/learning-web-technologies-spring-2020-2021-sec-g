@@ -39,7 +39,7 @@
 
     function updateProduct($product){
         $conn = getConnection();
-        $profit=$products['sprice']-$products['bprice'];
+        $profit=$product['sprice']-$product['bprice'];
         $sql = "update products set name='{$product['name']}', buyingPrice='{$product['bprice']}', sellingPrice='{$product['sprice']}', profit='{$profit}' where ID='{$product['id']}'";
         $result = mysqli_query($conn, $sql);
         
