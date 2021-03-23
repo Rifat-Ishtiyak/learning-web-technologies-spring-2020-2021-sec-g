@@ -5,9 +5,9 @@
 
         $id=$_SESSION['edit_id'];
     
-        deleteProduct($id);
+        $status=deleteProduct($id);
         //echo $id;
-        if(isset($_POST['display'])){
+        if($status==true){
             header('location: ../view/display.php');
         }else{
             
