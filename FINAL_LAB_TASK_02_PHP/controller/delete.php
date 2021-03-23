@@ -4,7 +4,6 @@
     
 
         $id=$_SESSION['edit_id'];
-
     
         deleteProduct($id);
         //echo $id;
