@@ -34,6 +34,14 @@ function validate(){
                 if(uname.split(" ").length<2){
                     document.getElementById('msg1').innerHTML="**name must contain at least 2 words";
                 }
+                else{
+                    if(uname.charAt(0)=="0" || uname.charAt(0)=="1" || uname.charAt(0)=="2" || uname.charAt(0)=="3" || uname.charAt(0)=="4" || uname.charAt(0)=="5" || uname.charAt(0)=="6" || 
+                    uname.charAt(0)=="7" || uname.charAt(0)=="8" || uname.charAt(0)=="9" || uname.charAt(0)=="!" ||
+                    uname.charAt(0)=="@" || uname.charAt(0)=="$" || uname.charAt(0)=="%" || uname.charAt(0)=="&" || uname.charAt(0)=="*")
+                    {
+                        document.getElementById('msg1').innerHTML="**must start with a letter";
+                    }
+                }
             }
         }
 
